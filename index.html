@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -22,45 +22,75 @@
       <li>TÓPICOS</li>
     </ul>
   </nav>
-  <section>
-    <h1>Hello world pale blue dot.</h1>
-    <p>El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los
+  <section class="intro">
+    <h1 class="intro-title">Hello world pale blue dot.</h1>
+    <p class="intro-text">El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los
       jueves cada 15 días.</p>
-    <a href="">Conoce más</a>
+    <button class="intro-button">CONOCE MÁS</button>
   </section>
   <!--Button-->
-  <div>
-    <section>
-      <h1>Episodios</h1>
 
-    </section>
-    <img src="./images/phone.png" alt="phone with news">
-    <section>
-      <h2>De donde venimos</h2>
-      <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in the
-        Universe, are challenged by this point of pale light.
-        Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there
-        is no hint that help will come from elsewhere to save us from ourselves.</p>
-    </section>
-  </div>
+
+  <section class="episodios">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+      <polygon fill="white" points="0,-100 100,0 0,100" />
+    </svg>
+    <h1 class="episodios-title">Episodios</h1>
+    <div class="container-iframes">
+      <iframe src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt" width="92%" height="232"
+        frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      <iframe src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby" width="92%" height="232"
+        frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      <iframe src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv" width="92%" height="232"
+        frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      <iframe src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn" width="92%" height="232"
+        frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </div>
+
+  </section>
+  <svg class="triangle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+    <polygon fill="white" points="0,100 100,0 100,100" />
+  </svg>
+  <section>
+
+    <img id="phone" src="./images/phone.png" alt="phone with news">
+    <h2>De donde venimos</h2>
+    <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in the
+      Universe, are challenged by this point of pale light.
+      Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there
+      is no hint that help will come from elsewhere to save us from ourselves.</p>
+  </section>
   <section>
     <h1>Invitadas estelares</h1>
-    <img src="./images/grace-hopper.png" alt="Gracce Hopper Photo">
-    <img src="./images/Katie-Bouman.png" alt="Katie Bouman Photo">
-    <img src="./images/Margaret_Hamilton.png" alt="Margaret Hamilton Photo">
-    <img src="./images/An E.R.A.Univac 1103 computer in the 1950s.png" alt="Univac Computer 1103 Photo">
-    <img src="./images/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png"
-      alt="Eniac Computer Photo">
-    <img src="./images/susan-kare.png" alt="Susan Kare Photo">
+    <div class="container-invitadas">
+      <img class="img-invitadas" src="./images/grace-hopper.png" alt="Gracce Hopper Photo">
+      <img class="img-invitadas" src="./images/Katie-Bouman.png" alt="Katie Bouman Photo">
+      <img class="img-invitadas" src="./images/Margaret_Hamilton.png" alt="Margaret Hamilton Photo">
+      <img class="img-invitadas" src="./images/An E.R.A.Univac 1103 computer in the 1950s.png"
+        alt="Univac Computer 1103 Photo">
+      <img class="img-invitadas"
+        src="./images/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png"
+        alt="Eniac Computer Photo">
+      <img class="img-invitadas" src="./images/susan-kare.png" alt="Susan Kare Photo">
+    </div>
   </section>
-  <section>
+  <section class="temas">
     <h1>Algunos de nuestros temas</h1>
-    <img src="./images/icon1.svg" alt="">
-    <img src="./images/icon2.svg" alt="">
-    <img src="./images/icon3.svg" alt="">
-    <img src="./images/icon4.svg" alt="">
+    <div class="container-temas">
+      <img src="./images/icon1.svg" alt="">
+      <img src="./images/icon2.svg" alt="">
+      <img src="./images/icon3.svg" alt="">
+      <img src="./images/icon4.svg" alt="">
+      <p>Trabajo remoto</p>
+      <p>Repensando la programación</p>
+      <p>Bases del código</p>
+      <p>Seguridad informatica</p>
+    </div>
   </section>
-  <section>
+  <section class="novedades">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+      <polygon fill="white" points="0,-100 100,0 0,100" />
+    </svg>
     <h1>¿Querés las últimas novedades?</h1>
     <button>ESCUCHÁ LOS EPISODIOS</button>
   </section>

@@ -1,8 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap');
 
-* {
+p,
+li {
   font-family: 'IBM Plex Mono', monospace;
 }
+
+h1,
+h2 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  margin: 5% 10% 0% 10%;
+}
+
+body {
+  margin: 0;
+}
+
+/* NAVBAR MOBILE */
 
 .navbar {
   width: 100%;
@@ -30,7 +44,7 @@
   text-decoration: none;
 }
 
-/* menu */
+/* MENU */
 
 .navbar .menu {
   clear: both;
@@ -38,7 +52,7 @@
   transition: max-height .2s ease-out;
 }
 
-/* menu icon */
+/* MENU ICON */
 
 .navbar .menu-icon {
   cursor: pointer;
@@ -77,7 +91,7 @@
   top: -5px;
 }
 
-/* menu btn */
+/* MENU BTN*/
 
 .navbar .menu-btn {
   display: none;
@@ -104,9 +118,63 @@
   top: 0;
 }
 
+/* INTRO */
+
+.intro-text {
+  margin: 0% 10% 0% 10%;
+  padding: 0 45% 0 0;
+}
+
+.intro-button {
+  background-color: #00F3BB;
+  border: none;
+  width: 226px;
+  height: 56px;
+  font-size: 18px;
+  font-family: 'IBM Plex Mono', monospace;
+  margin: 5% 10%;
+}
+
+/* EPISODIOS */
+
+.container-iframes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+iframe {
+  margin: 2% 4%;
+}
+
+/* DE DONDE VENIMOS */
+
+#phone {
+  width: 100%;
+  height: auto;
+}
+
+/* INVITADAS */
+
+.container-invitadas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.img-invitadas {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+
 /* DESKTOP */
 
 @media screen and (min-width: 768px) {
+
+  /* NAVBAR */
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -147,4 +215,99 @@
   .navbar .menu-icon {
     display: none;
   }
+
+  /* INTRO */
+
+  .intro {
+    height: auto;
+  }
+
+  .intro-title {
+    font-size: 64px;
+  }
+
+  /* EPISODIOS */
+
+  .episodios {
+    height: auto;
+    background-image: linear-gradient(to right, #0000A3, #0000FF)
+  }
+
+  .episodios-title {
+    font-size: 48px;
+    color: white;
+  }
+
+  .container-iframes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+
+  .container-iframes>iframe {
+    flex: 0 40%;
+    margin: 3%;
+  }
+
+  svg {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 10vw;
+  }
+
+  .triangle {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 10vw;
+  }
+
+  #phone {
+    width: 457.6px;
+    height: 660px;
+  }
+
+  /* INVITADAS */
+  .container-invitadas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .img-invitadas {
+    margin: 0;
+    width: 33.33%;
+    height: auto;
+  }
+
+  /* TEMAS */
+
+  .container-temas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .container-temas>img,
+  p {
+    flex: 0 15%;
+    margin: 3%;
+  }
+
+  .temas {
+    height: auto;
+  }
+
+  /* NOVEDADES */
+
+  .novedades {
+    height: 518px;
+    background-image: linear-gradient(to right, #0000A3, #0000FF)
+  }
+
+  /* FOOTER */
+
+  
 }
