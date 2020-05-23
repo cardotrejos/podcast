@@ -16,25 +16,44 @@ body {
   margin: 0;
 }
 
+a {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+ .navbar > ul > li > a:hover {
+  color: #00F3BB;
+  text-decoration: line-through;
+}
+
+li > a:active {
+  text-decoration: line-through;
+  color: rgba(6,10,36,0.56);
+}
+
 /* NAVBAR MOBILE */
 
 .navbar {
   width: 100%;
+
 }
 
 .navbar ul {
+  margin: 5px;
   list-style: none;
   overflow: hidden;
 }
 
-.navbar li a {
-  padding: 20px 20px;
-  text-decoration: none;
+.navbar li {
+  margin: 15px;
+  color: white;
 }
 
-.navbar li a:hover,
-.navbar .menu-btn:hover {
-  background-color: #333;
+.navbar li a {
+  text-decoration: none;
 }
 
 .navbar .logo {
@@ -50,6 +69,7 @@ body {
   clear: both;
   max-height: 0;
   transition: max-height .2s ease-out;
+  background-color:#0000EC;
 }
 
 /* MENU ICON */
@@ -125,7 +145,7 @@ body {
   padding: 0 45% 0 0;
 }
 
-.intro-button {
+.btn-hover {
   background-color: #00F3BB;
   border: none;
   width: 226px;
@@ -133,6 +153,23 @@ body {
   font-size: 18px;
   font-family: 'IBM Plex Mono', monospace;
   margin: 5% 10%;
+
+  moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+  background-image: linear-gradient(to left, #0000FE, #00F0B8);
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+  outline: none;
 }
 
 /* EPISODIOS */
@@ -174,6 +211,15 @@ iframe {
 
 @media screen and (min-width: 768px) {
 
+  a {
+    color: black;
+  }
+  
+  a:visited {
+    color: black;
+  }
+  
+
   /* NAVBAR */
   .navbar {
     display: flex;
@@ -210,6 +256,7 @@ iframe {
     clear: none;
     float: right;
     max-height: none;
+    background-color:white;
   }
 
   .navbar .menu-icon {
@@ -264,6 +311,19 @@ iframe {
     height: 10vw;
   }
 
+  /* DE DONDE VENIMOS */
+
+  .container-ddv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .container-ddv>div {
+    flex: 0 40%;
+    margin: 3%;
+  }
+
   #phone {
     width: 457.6px;
     height: 660px;
@@ -309,5 +369,8 @@ iframe {
 
   /* FOOTER */
 
-  
+  footer>p,
+  i {
+    display: inline-block;
+  }
 }
