@@ -23,11 +23,13 @@
     </ul>
   </nav>
   <section class="intro">
-    <h1 class="intro-title">Hello world pale blue dot.</h1>
+    <h1 class="intro-title">Hello <span style="text-decoration:line-through">world</span> pale blue dot<span
+        style="color:blue">.</span></h1>
     <p class="intro-text">El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos
-      episodios, todos los
-      jueves cada 15 días.</p>
-    <button class="btn-hover btn-intro">CONOCE MÁS</button>
+      episodios, todos los jueves cada 15 días.</p>
+    <div class="container-btn">
+      <button class="btn-hover btn-intro">CONOCE MÁS</button>
+    </div>
   </section>
 
   <section class="episodios" id="episodios">
@@ -50,12 +52,13 @@
     </svg>
   </section>
 
-  <section id="nosotros">
+  <section class="nosotros" id="nosotros">
     <div class="container-ddv">
       <img id="phone" src="./images/phone.png" alt="phone with news">
       <div>
-        <h2>De donde venimos</h2>
-        <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in the
+        <h2>De dónde venimos</h2>
+        <p class="ddv-text">Our posturings, our imagined self-importance, the delusion that we have some privileged
+          position in the
           Universe, are challenged by this point of pale light.</br>
           Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness,
           there is no hint that help will come from elsewhere to save us from ourselves.</p>
@@ -81,14 +84,22 @@
   <section class="temas" id="topicos">
     <h1 class="temas-title">Algunos de nuestros temas</h1>
     <div class="container-temas">
-      <img src="./images/icon1.svg" alt="trabajo remoto imagen">
-      <img src="./images/icon2.svg" alt="repensando la programacion imagen">
-      <img src="./images/icon3.svg" alt="bases del codigo imagen">
-      <img src="./images/icon4.svg" alt="seguridad informatica imagen">
-      <p>Trabajo remoto</p>
-      <p>Repensando la programación</p>
-      <p>Bases del código</p>
-      <p>Seguridad informatica</p>
+      <div>
+        <img src="./images/icon1.svg" alt="trabajo remoto imagen">
+        <p>Trabajo remoto</p>
+      </div>
+      <div>
+        <img src="./images/icon2.svg" alt="repensando la programacion imagen">
+        <p>Repensando la programación</p>
+      </div>
+      <div>
+        <img src="./images/icon3.svg" alt="bases del codigo imagen">
+        <p>Bases del código</p>
+      </div>
+      <div>
+        <img src="./images/icon4.svg" alt="seguridad informatica imagen">
+        <p>Seguridad informatica</p>
+      </div>
     </div>
   </section>
 
@@ -103,12 +114,16 @@
   </section>
 
   <footer>
-    <p>© 2019— Hello blue pale dot</p>
-    <i class="fab fa-spotify"></i>
-    <i class="fab fa-instagram"></i>
-    <i class="fab fa-twitter"></i>
-    <i class="fab fa-facebook"></i>
-    <i class="fab fa-telegram"></i>
+    <div class="container-ft">
+      <p>© 2019— Hello blue pale dot</p>
+      <div>
+        <i class="fab fa-spotify"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-telegram"></i>
+      </div>
+    </div>
   </footer>
 
 </body>

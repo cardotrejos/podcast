@@ -8,8 +8,9 @@ li {
 
 h1,
 h2 {
+  font-size: 36px;
   font-family: 'IBM Plex Sans', sans-serif;
-  margin: 5% 10% 0% 10%;
+  margin: 2% 5% 5% 5%;
 }
 
 body {
@@ -139,10 +140,15 @@ li>a:active {
 }
 
 /* INTRO */
+.intro-title {
+  font-size: 36px;
+}
 
 .intro-text {
-  margin: 0% 10% 0% 10%;
-  padding: 0 45% 0 0;
+  font-size: 14px;
+  margin: 0% 5% 0% 5%;
+  padding: 0 5% 0 0;
+  text-align: justify;
 }
 
 .btn-hover {
@@ -150,7 +156,8 @@ li>a:active {
   border: none;
   font-size: 18px;
   font-family: 'IBM Plex Mono', monospace;
-  margin: 5% 10%;
+  margin-top: 5%;
+  margin-bottom: 10%;
 
   moz-transition: all .4s ease-in-out;
   -o-transition: all .4s ease-in-out;
@@ -158,8 +165,14 @@ li>a:active {
   transition: all .4s ease-in-out;
 }
 
+.container-btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .btn-intro {
-  width: 226px;
+  width: 90%;
   height: 56px;
 }
 
@@ -179,20 +192,25 @@ li>a:active {
 
 .episodios {
   height: auto;
-  background-image: linear-gradient(to right, #0000A3, #0000FF);
+  background-image: linear-gradient(to top, #0000A3, #0000FF);
+}
+
+.episodios-title {
+  margin-top: 10%;
+  margin-bottom: 0;
+  color: white;
 }
 
 .container-iframes {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
+  padding: 5% 0 30% 0;
 }
 
 iframe {
   margin: 2% 4%;
 }
-
 
 svg {
   position: relative;
@@ -211,8 +229,19 @@ svg {
 /* DE DONDE VENIMOS */
 
 #phone {
+  position: relative;
+  top: -100px;
   width: 100%;
   height: auto;
+}
+
+.container-ddv {
+  display: flex;
+  flex-direction: column;
+}
+
+.ddv-text {
+  margin: 0 5% 20% 5%;
 }
 
 /* INVITADAS */
@@ -230,14 +259,77 @@ svg {
 }
 
 .iv-title {
-  font-size: 48px;
+  font-size: 36px;
   margin-bottom: 20px;
 }
 
+/* TEMAS */
 
-/* DESKTOP */
+.container-temas {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+}
+
+.container-temas>div {
+  text-align: center;
+  font-weight: bold;
+  flex: 0 15%;
+  margin: 5% 3% 5% 3%;
+}
+
+
+
+/* NOVEDADES */
+
+.container-nv {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.novedades-title {
+  margin-top: 10%;
+  color: white;
+  text-align: center;
+}
+
+.btn-nv {
+  width: 90%;
+  height: 56px;
+}
+
+.novedades {
+  height: auto;
+  background-image: linear-gradient(to top, #0000A3, #0000FF);
+  padding-bottom: 10%;
+}
+
+/* FOOTER */
+
+.container-ft {
+  margin: 0 5% 0 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+i {
+  margin: 10px;
+}
+
+
+/* ----------------- DESKTOP ------------------- */
 
 @media screen and (min-width: 768px) {
+
+  h1,
+  h2 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin: 5% 10% 0% 10%;
+  }
 
   a {
     color: black;
@@ -301,6 +393,27 @@ svg {
     font-size: 64px;
   }
 
+  .intro-text {
+    margin-left: 10%;
+    padding-right: 40%;
+  }
+
+  .container-btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+
+  .btn-intro {
+    margin-left: 10%;
+    width: 20%;
+    height: 56px;
+  }
+
+  .btn-hover {
+    margin-bottom: 0;
+  }
+
   /* EPISODIOS */
 
   .episodios {
@@ -311,18 +424,19 @@ svg {
   .episodios-title {
     font-size: 48px;
     color: white;
+    margin: 3% 10% 0 10%;
   }
 
   .container-iframes {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
+    padding-top: 0;
+    padding-bottom: 5%;
   }
 
   .container-iframes>iframe {
     flex: 0 40%;
-    margin: 3%;
   }
 
   svg {
@@ -343,6 +457,7 @@ svg {
 
   .container-ddv {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -358,6 +473,8 @@ svg {
   }
 
   #phone {
+    position: relative;
+    top: -130px;
     width: 457.6px;
     height: 660px;
   }
@@ -375,25 +492,27 @@ svg {
     height: auto;
   }
 
+  .iv-title {
+    font-size: 48px;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
   /* TEMAS */
 
   .container-temas {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  .container-temas>p {
+  .container-temas>div {
     text-align: center;
     font-weight: bold;
     flex: 0 15%;
-    margin: 3%;
+    margin: 0% 3% 0 3%;
   }
-
-  .container-temas>img {
-    flex: 0 15%;
-    margin: 3%;
-   }
 
   .temas {
     height: auto;
@@ -401,7 +520,7 @@ svg {
 
   .temas-title {
     font-size: 48px;
-    margin-bottom: 20px;
+    margin-bottom: 5%;
   }
 
   /* NOVEDADES */
@@ -429,8 +548,16 @@ svg {
 
   /* FOOTER */
 
-  footer>p,
-  i {
-    display: inline-block;
+  .container-ft {
+    margin: 0 5% 0 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
+
+  i {
+    margin: 10px;
+  }
+
 }
