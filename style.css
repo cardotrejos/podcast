@@ -24,14 +24,14 @@ a:visited {
   color: white;
 }
 
- .navbar > ul > li > a:hover {
+.navbar>ul>li>a:hover {
   color: #00F3BB;
   text-decoration: line-through;
 }
 
-li > a:active {
+li>a:active {
   text-decoration: line-through;
-  color: rgba(6,10,36,0.56);
+  color: rgba(6, 10, 36, 0.56);
 }
 
 /* NAVBAR MOBILE */
@@ -69,7 +69,7 @@ li > a:active {
   clear: both;
   max-height: 0;
   transition: max-height .2s ease-out;
-  background-color:#0000EC;
+  background-color: #0000EC;
 }
 
 /* MENU ICON */
@@ -148,16 +148,19 @@ li > a:active {
 .btn-hover {
   background-color: #00F3BB;
   border: none;
-  width: 226px;
-  height: 56px;
   font-size: 18px;
   font-family: 'IBM Plex Mono', monospace;
   margin: 5% 10%;
 
   moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-intro {
+  width: 226px;
+  height: 56px;
 }
 
 .btn-hover:hover {
@@ -174,6 +177,11 @@ li > a:active {
 
 /* EPISODIOS */
 
+.episodios {
+  height: auto;
+  background-image: linear-gradient(to right, #0000A3, #0000FF);
+}
+
 .container-iframes {
   display: flex;
   flex-wrap: wrap;
@@ -183,6 +191,21 @@ li > a:active {
 
 iframe {
   margin: 2% 4%;
+}
+
+
+svg {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 10vw;
+}
+
+.triangle {
+  position: relative;
+  bottom: -4px;
+  width: 100%;
+  height: 10vw;
 }
 
 /* DE DONDE VENIMOS */
@@ -206,6 +229,11 @@ iframe {
   margin: 0;
 }
 
+.iv-title {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
 
 /* DESKTOP */
 
@@ -214,11 +242,11 @@ iframe {
   a {
     color: black;
   }
-  
+
   a:visited {
     color: black;
   }
-  
+
 
   /* NAVBAR */
   .navbar {
@@ -256,7 +284,7 @@ iframe {
     clear: none;
     float: right;
     max-height: none;
-    background-color:white;
+    background-color: white;
   }
 
   .navbar .menu-icon {
@@ -306,7 +334,7 @@ iframe {
 
   .triangle {
     position: relative;
-    bottom: 0;
+    bottom: -4px;
     width: 100%;
     height: 10vw;
   }
@@ -322,6 +350,11 @@ iframe {
   .container-ddv>div {
     flex: 0 40%;
     margin: 3%;
+  }
+
+  .container-ddv>div p {
+    margin: 5% 10% 0% 10%;
+    line-height: 24px;
   }
 
   #phone {
@@ -350,21 +383,48 @@ iframe {
     justify-content: center;
   }
 
-  .container-temas>img,
-  p {
+  .container-temas>p {
+    text-align: center;
+    font-weight: bold;
     flex: 0 15%;
     margin: 3%;
   }
 
+  .container-temas>img {
+    flex: 0 15%;
+    margin: 3%;
+   }
+
   .temas {
     height: auto;
+  }
+
+  .temas-title {
+    font-size: 48px;
+    margin-bottom: 20px;
   }
 
   /* NOVEDADES */
 
   .novedades {
     height: 518px;
-    background-image: linear-gradient(to right, #0000A3, #0000FF)
+    background-image: linear-gradient(to right, #0000A3, #0000FF);
+  }
+
+  .container-nv {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .novedades-title {
+    font-size: 48px;
+    color: white;
+  }
+
+  .btn-nv {
+    width: 345px;
+    height: 56px;
   }
 
   /* FOOTER */
