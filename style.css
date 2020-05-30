@@ -442,8 +442,10 @@ i {
     flex: 0 40%;
   }
 
-  iframes {
+  iframe {
     border: 0;
+    width: 92%;
+    height: 232;
   }
 
   svg {
