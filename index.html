@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./styles/style.css">
   <script src="https://kit.fontawesome.com/64f0ee337a.js" crossorigin="anonymous"></script>
   <title>Podcast</title>
 </head>
@@ -22,21 +22,23 @@
       <li><a href="#topicos">TÓPICOS</a></li>
     </ul>
   </nav>
-  <section class="intro">
-    <h1 class="intro-title">Hello <span style="text-decoration:line-through">world</span> pale blue dot<span
-        style="color:blue">.</span></h1>
-    <p class="intro-text">El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos
-      episodios, todos los jueves cada 15 días.</p>
-    <div class="container-btn">
-      <button class="btn-hover btn-intro">CONOCE MÁS</button>
-    </div>
-  </section>
+
+  <header class="intro">
+      <h1 class="intro-title">Hello <span style="text-decoration:line-through">world</span> pale blue dot<span
+          style="color:blue">.</span></h1>
+      <p class="intro-text">El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos
+        episodios, todos los jueves cada 15 días.</p>
+      <div class="container-btn">
+        <a class="btn-hover btn-intro" target="_blank" href="https://github.com/cardotrejos/podcast">CONOCE MÁS</a>
+      </div>
+  </header>
+
 
   <section class="episodios" id="episodios">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
       <polygon fill="white" points="0,-100 100,0 0,100" />
     </svg>
-    <h1 class="episodios-title">Episodios</h1>
+    <h2 class="episodios-title">Episodios</h2>
     <div class="container-iframes">
       <iframe src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt" height="232"
         allow="encrypted-media"></iframe>
@@ -67,7 +69,7 @@
   </section>
 
   <section id="entrevistas">
-    <h1 class="iv-title">Invitadas/os estelares</h1>
+    <h2 class="iv-title">Invitadas/os estelares</h2>
     <div class="container-invitadas">
       <img class="img-invitadas" src="./images/grace-hopper.png" alt="Gracce Hopper Photo">
       <img class="img-invitadas" src="./images/Katie-Bouman.png" alt="Katie Bouman Photo">
@@ -82,7 +84,7 @@
   </section>
 
   <section class="temas" id="topicos">
-    <h1 class="temas-title">Algunos de nuestros temas</h1>
+    <h2 class="temas-title">Algunos de nuestros temas</h2>
     <div class="container-temas">
       <div>
         <img src="./images/icon1.svg" alt="trabajo remoto imagen">
@@ -108,8 +110,8 @@
       <polygon fill="white" points="0,-100 100,0 0,100" />
     </svg>
     <div class="container-nv">
-      <h1 class="novedades-title">¿Querés las últimas novedades?</h1>
-      <button class="btn-hover btn-nv">ESCUCHÁ LOS EPISODIOS</button>
+      <h3 class="novedades-title">¿Querés las últimas novedades?</h3>
+      <a class="btn-hover btn-nv" target="_blank" href="https://github.com/cardotrejos/podcast">ESCUCHÁ LOS EPISODIOS</a>
     </div>
   </section>
 

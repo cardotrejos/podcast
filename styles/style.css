@@ -7,7 +7,8 @@ li {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-size: 36px;
   font-family: 'IBM Plex Sans', sans-serif;
   margin: 2% 5% 5% 5%;
@@ -156,8 +157,10 @@ li>a:active {
   border: none;
   font-size: 18px;
   font-family: 'IBM Plex Mono', monospace;
-  margin-top: 5%;
   margin-bottom: 10%;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .container-btn {
@@ -167,6 +170,7 @@ li>a:active {
 }
 
 .btn-intro {
+  margin-top: 5%;
   width: 90%;
   height: 56px;
 }
@@ -408,6 +412,9 @@ i {
   }
 
   .btn-intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-left: 10%;
     width: 20%;
     height: 56px;
@@ -552,6 +559,9 @@ i {
 
   .btn-nv {
     width: 345px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 56px;
   }
 
